@@ -36,27 +36,27 @@ public class Employee {
     private String contactNumber;
   
     private String emailAddress;
-    @JsonFormat(pattern="dd-mm-yyyy")
+    @JsonFormat(pattern="dd-MM-yyyy")
     private LocalDate dateOfBirth;
-    @JsonFormat(pattern="dd-mm-yyyy")
+    @JsonFormat(pattern="dd-MM-yyyy")
     private LocalDate employmentStartDate;
     private String taxIdentificationNumber;
     private String bankName;
     private String accountNumber;
     private String routingNumber;
     private String bankBranch;
-    @JsonFormat(pattern="dd-mm-yyyy")
-    private String employeeOfferLetterReleaseDate;
+    @JsonFormat(pattern="dd-MM-yyyy")
+    private LocalDate employeeOfferLetterReleaseDate;
     private String employeeDesignation;
-    @JsonFormat(pattern="dd-mm-yyyy")
-    private String joiningDate;
+    @JsonFormat(pattern="dd-MM-yyyy")
+    private LocalDate joiningDate;
     private String joiningCtc;
-    @JsonFormat(pattern="dd-mm-yyyy")
-    private String hikeLetterDate;
+    @JsonFormat(pattern="dd-MM-yyyy")
+    private LocalDate hikeLetterDate;
     private String hikeCtc;
     private String hikeDesignation;
-    @JsonFormat(pattern="dd-mm-yyyy")
-    private String hikeLetterEffectiveDate;
+    @JsonFormat(pattern="dd-MM-yyyy")
+    private LocalDate hikeLetterEffectiveDate;
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", address=" + address
